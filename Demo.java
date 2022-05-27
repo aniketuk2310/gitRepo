@@ -270,47 +270,10 @@ class Practice{
 
 		shift(arr,arr.length);
 		
-		System.out.println(Arrays.toString(arr));	//[2, 5, 3, 6, 7, 8, 0, 0, 0]
+	System.out.println(Arrays.toString(arr));	//[2, 5, 3, 6, 7, 8, 0, 0, 0]
 	}
 }
 */
-
-
-// 11. Write a Java Program to Move all Zeros to Start of the Array.
-
-class Practice{
-	
-	public static void shift(int arr[],int n){
-		
-		int count = n;
-		
-		for(int i=n;i>0;i--){
-			if(arr[i] != 0 ){
-				arr[count] = arr[i];
-				count--	;			
-			}
-		}// [0, 2, 0, 2, 5, 3, 6, 7, 8]
-		
-		while(count>0){
-			arr[count] = 0;
-			count--;
-		}	// [0, 0, 0, 2, 5, 3, 6, 7, 8]
-	}
-	
-	public static void main(String...args){
-		
-		int arr[] = {0,2,0,5,3,0,6,7,8};
-
-		shift(arr,arr.length-1);
-		
-		System.out.println(Arrays.toString(arr));	// [0, 0, 0, 2, 5, 3, 6, 7, 8]
-	}
-}
-
-
-
-
-
 
 
 
